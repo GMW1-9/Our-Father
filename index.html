@@ -1,56 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Saint Martin</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+      h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+/* Styling to make the button look nice on the screen */
+  .print-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .print-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* PRINT RULES 
+    This tells the printer to hide the button and any other 
+    elements you don't want on the physical paper.
+  */
+  @media print {
+    .print-btn {
+      display: none !important;
+    }
+  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print Button Example</title>
+
+<style>
+  /* Styling to make the button look nice on the screen */
+  .print-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .print-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* PRINT RULES */
+  @media print {
+    /* Hide the print button on the paper */
+    .print-btn {
+      display: none !important;
+    }
+
+    /* Force the content to fit within the height of one page */
+    body {
+      max-height: 100vh; 
+      overflow: hidden; /* Prevents spilling onto page 2 */
+    }
+  }
+
+  /* Shrink the default printer margins to fit more on one page */
+  @page {
+    margin: 10mm; 
+  }
+    
+    </style>
 </head>
 <body>
-<!--DONE-->
-<background color:white;>
-<h1>Life of Saint Martin</h1>
-<p>Saint Martin de Porres was born in Lima, Peru on December 9 1579. His father, Don Juan de Porras de Miranda, was a Spanish noble and his mother,
-  <br> Ana Velázquez, was a freed slave from Panama. 
- <br> His Mother wanted him to be baptized as soon as possible. 
- <br> Before his baptism his father left them because he did not like his son’s skin color and later preferred his job as governor over him.
-  <br>When he was about 8 his sister, Juana, was born. Around this time his father had acknowledged him but after Juana was born he abandoned them again.
-  <br>Saint Martin's mother would ask him to go to the market to get some food. Even though they were poor, when he  saw anyone begging for food.
-  <br>He would give the beggar food from the food he had gotten from the market. </p>
+<button class="print-btn" onclick="window.print()">🖨 Print Page</button>
+   
+    <h1>The Angelus</h1>
+    <h3>Said at 12am/6am/12pm/6pm</h3>
+  <p>The Angel of the Lord declared unto Mary. 
+    <br><strong>And She was conceived by the Holy Spirit.</strong>
+      <br>
+      <br><em>Hail Mary full of grace the Lord is with you blessed are thou
+      <br>among Women and blessed is the fruit of thy womb Jesus
+      <br>Holy Mary Mother of God pray for sinners now and at the hour of our death. 
+      <br>Amen.</em>
+       <br>
+      <br> 
+          Behold the handmaid of the Lord.
+      <br><strong>Be it done according to Thy Word</strong>
 
-<p>When Saint Martin de Porres was twelve he trained to be a barber.
-<br> In his day a barber was also a surgeon.
-<br>Then at fifteen he entered the Dominican order but he was not accepted at first so then he served as a servant boy at the Dominican Priory of the Holy Rosary also known as Santo Domingo in Lima, Peru.
-<br> In 1603 at twenty-four he was finally accepted as a Dominican as a lay brother.
-<br> He was able to talk to animals.
- In one instance there was a dog and a cat eating at his feet, then he saw a mouse in a little hole in the wall and told the mouse to come over and eat with the dog and cat, it first hesitated then it came and ate with the cat and the dog.
-  The reason why this was unusual is because dogs hunted cats and cats hunted mice at this time.
-  They were also not yet domesticated.</p> 
-
-<h1>The Death & canonization of Saint Martin de Porres</h1>     
-<p>St. Martin died on November 3, 1639 at around sixty among his fellow dominicans from quartan fever that if he got it in our time he might have survived.
-It is likely that he had gotten it for some of the sick people he was helping.
-When he died he was reciting the creed in latin when he got to the words et homo factus est (and became man) he died. During his funeral tons of Peruvians, poor, rich, young, old they all were there.
-They also were very eager to get a piece of his habit, these pieces contributed to many miraculous cures from various illnesses. He was buried in the convent where he joined the Dominican order, Santo Domingo in Lima Peru.</p>
-
-<p>I think Saint Martin de Porres was declared a saint because of his humility, his care for the poor and the sick no matter where they were from(including animals). He did not hold back from helping any one.
-When he was helping around before he became a brother he found a sick person somewhere on the street with sores all over their body. 
-He brought the sick person to the monastery and put the sick person in his own bed and cared for the sick person. 
-He would even help animals that were sick, hungry, thirsty or injured.</p>
-
-<p>There was one time when he was going up or down stairs when the devil appeared to him, then he used his belt to get the devil away,  he drew a cross with burning coal and the devil left him. He might have been afraid for a second but he trusted the Lord and the devil fled.
-He was tormented by the devil frequently because he was very holy and was very charitable. No matter what he kept his faith and he was rewarded for keeping his faith and charity.</p>
-
-<br>One miracle that is connected to Saint Martin’s canonization was the Paraguay Miracle in 1948, an eighty seven year old woman named Dorothea Caballero Escalante who had severe intestinal blockage and had a heart attack.
-She was instantly healed after praying with the intercession of St Martin de Porres. Another miracle was when a kid named Antonio Cabrera Pérez-Camacho was on a roof <strong>a 60 pound cement came loose he fell then the block fell on his leg crushing it.</strong>
-He went to the hospital.<br>On September 1st of that year one of his relatives, Adolfo Luqu, gave him a St. Martin prayer card.
-Then his mother prayed with the holy card on his leg. In the morning his doctor came in and was shocked, he was healed!  </p>
+       <br><em>Hail Mary...</em>
+       <br>
+       <br>
+        And the Word was made Flesh.
+       <br><strong> And dwelt among us</strong>
+       
+       <br><em>Hail Mary...</em>
+       <br>
+       <br>
+      Pray for us, O Holy Mother of God
+       <br><strong> that we may be made Worthy of the promises of Christ.</strong>
+       <br>
+      <br>
+      Let us pray: Pour forth, we beseech thee, O Lord,
+       <br> Thy Grace into our hearts; 
+       <br>That we to whom the Incarnation of Christ,
+       <br> Thy Son, 
+       <br> was made known by the message of an Angel,
+       <br> May by His Passion and Cross,
+       <br> be brought to the glory of His Resurrection.
+       <br> Through the same Christ Our Lord.
+       <br> Amen.
+  </p>
 </body>
-  
-<p>Sources used:</p>
-  <ul>
-<li><a href="https://www.stmartin.ie/life-st-martin/"> https://www.stmartin.ie/life-st-martin/</a></li>
-<li><a href="https://prayers4reparation.wordpress.com/2012/05/15/two-miracles-through-the-intercession-of-st-martin-de-porres/#:~:text=Lucia%20dos%20Santos)-,TWO%20MIRACLES%20THROUGH%20THE%20INTERCESSION%20OF%20ST%20MARTIN%20DE%20PORRES,Martin%20to%20cure%20her%20mother">  https://prayers4reparation.wordpress.com/2012/05/15/two-miracles-through-the-intercession-of-st-martin-de-porres/#:~:text=Lucia%20dos%20Santos)-,TWO%20MIRACLES%20THROUGH%20THE%20INTERCESSION%20OF%20ST%20MARTIN%20DE%20PORRES,Martin%20to%20cure%20her%20mother</a></li>
-<li><a href="https://www.ewtnnews.com/world/americas/man-recounts-miraculous-healing-through-st-martin-de-porres-intercession?redirectedfrom=cna"> "https://www.ewtnnews.com/world/americas/man-recounts-miraculous-healing-through-st-martin-de-porres-intercession?redirectedfrom=cna </a></li>
-</ul>
-      
-
-     
 </html>
